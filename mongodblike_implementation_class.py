@@ -111,8 +111,6 @@ class BinTree:
         return levels
 
     def run_on_dict(self, item):
-        # TODO:
-        # add AND or as lambda func
         if self.root.value == 'and':
             return self.root.left.run_on_dict(item) and self.root.right.run_on_dict(item)
         elif self.root.value == 'or':
